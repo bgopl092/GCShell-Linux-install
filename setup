@@ -1,0 +1,39 @@
+#!/bin/bash
+cd $HOME
+wget "https://github.com/bgopl092/GCShell-Linux-install/releases/download/tool/tool.tar.gz"
+tar -xvf "tool.tar.gz"
+cd GCShell
+chmod +x 1 
+chmod +x 2
+chmod +x 3
+chmod +x 4
+chmod +x 5
+chmod +x 6
+chmod +x 7
+chmod +x 8
+chmod +x start
+cd data
+chmod +x firefox.sh
+chmod +x startos
+chmod +x removeallos
+cd install
+chmod +x debian11
+chmod +x debian12
+chmod +x ubuntu20.04
+chmod +x ubuntu21.04
+chmod +x ubuntu22.04
+cd $HOME/GCShell/data/
+sudo su -c "chmod +x firefox.sh"
+sleep 2
+clear
+cd $HOME
+bin=starttool
+cat > $bin <<- EOM
+cd $HOME/GCShell
+./start
+EOM
+chmod +x starttool
+rm -rfv tool.tar.gz
+clear
+echo "Setup done [√]"
+
